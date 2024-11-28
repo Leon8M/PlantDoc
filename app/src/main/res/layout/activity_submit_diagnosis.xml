@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"> <!-- White background -->
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Diagnosis"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="16dp"/>
+
+    <!-- Text Input -->
+    <EditText
+        android:id="@+id/diagnosisTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter details about the problem"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Image Selection Button -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Diagnosis"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Submission Status -->
+    <TextView
+        android:id="@+id/submissionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#4CAF50"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+</LinearLayout>
